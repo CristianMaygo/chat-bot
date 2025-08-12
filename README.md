@@ -5,7 +5,7 @@ Esta es una API RESTful que permite interactuar con un chatbot inteligente poten
 ## Funcionalidades
 
 - Recibe preguntas de usuarios a través de una interfaz HTTP.
-- Procesa las preguntas utilizando el modelo `gemini-pro` de Google.
+- Procesa las preguntas utilizando el modelo `gemini-2.5-flash(Por el momento)` de Google.
 - Devuelve respuestas generadas por la inteligencia artificial.
 - Implementa seguridad básica mediante una API Key (`X-API-Key`) para controlar el acceso.
 
