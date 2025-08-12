@@ -1,4 +1,4 @@
-# API de Chatbot con Google Gemini
+# API de Chatbot con Google Gemini(v 1.0)
 
 Esta es una API RESTful que permite interactuar con un chatbot inteligente potenciado por el modelo de lenguaje Gemini de Google.
 
