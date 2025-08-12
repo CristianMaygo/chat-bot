@@ -1,8 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from app.schemas.chat import ChatRequest, ChatResponse
 from app.services.gemini_service import get_gemini_response
+from app.security.auth import get_api_key
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(get_api_key)])
 
 @router.post("/ask", response_model=ChatResponse)
 def ask_chatbot(request: ChatRequest):
