@@ -85,6 +85,20 @@ class ChatResponse(BaseModel):
 ```
 - `response` (string): El texto de la respuesta generada por el modelo Gemini.
 
+### Para usar tu API localmente (mientras el servidor Uvicorn está corriendo), aquí tienes los enlaces:
+  Activa tu entorno virtual y corre este comando:
+  *  python -m uvicorn app.main:app --reload --port 8001
+  ### Despues de esto puedes probar los dos siguientes links, el primero es para probar localmente el chatbot
+   * Documentación Interactiva (Swagger UI):
+      http://127.0.0.1:8001/docs
+   * Documentación Alternativa (ReDoc):
+      http://127.0.0.1:8001/redoc
+### Enpoint:
+  * Endpoint del Chatbot (para enviar preguntas):
+      http://127.0.0.1:8001/chat/ask
+
+  ## Nota: Recuerda que el puerto (8001 en este caso) puede variar si lo inicias con otro puerto (ej. --port 8000).
+
 ## Contacto
 
 Comunícate conmigo mediante correo si necesitas usarla, o por medio de GitHub.
